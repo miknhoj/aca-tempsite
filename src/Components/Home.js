@@ -15,7 +15,7 @@ const StyledFooter = styled.div`
   color: gold;
   padding-top: 1%;
   text-align: center;
-`
+`;
 const StyledNavLinksContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -31,7 +31,6 @@ const StyledNavLinksContainer = styled.div`
     font-family: "Play", sans-serif;
   }
 `;
-
 const StyledHeadImage = styled.div`
   background-image: url("https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   width: 100vw;
@@ -40,11 +39,11 @@ const StyledHeadImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media(max-width: 555px){
+  @media (max-width: 555px) {
     display: none;
   }
 `;
-const StyledMissinStatement = styled.div`
+const StyledMissionStatement = styled.div`
   margin: 0 auto;
   width: 60vw;
   margin-top: 80px;
@@ -56,18 +55,16 @@ const StyledMissinStatement = styled.div`
     font-weight: 700;
   }
 `;
-
 const StyledSectionOne = styled.div`
   margin: 0 auto;
   width: 70vw;
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     border-bottom: solid 0px white;
   }
 `;
-
 const StyledSectionOneTitle = styled.div`
   background-color: navy;
   color: gold;
@@ -76,7 +73,7 @@ const StyledSectionOneTitle = styled.div`
   width: 380px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
@@ -103,7 +100,7 @@ const StyledSectionTwoTitle = styled.div`
   width: 115px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
@@ -115,12 +112,11 @@ const StyledSectionTwoContent = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: "Play", sans-serif;
-  @media(max-width:1100px){
+  @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
   }
 `;
-
 const StyledSectionTwoCard = styled.div`
   height: 250px;
   width: 250px;
@@ -132,7 +128,7 @@ const StyledSectionTwoCard = styled.div`
   justify-content: flex-start;
   padding-top: 3%;
   font-family: "Play", sans-serif;
-  @media(max-width:1100px){
+  @media (max-width: 1100px) {
     margin-bottom: 15px;
   }
 `;
@@ -145,7 +141,7 @@ const StyledSecThreeFourContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  @media(max-width:1100px){
+  @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
   }
@@ -156,7 +152,7 @@ const StyledSectionThree = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     border-bottom: solid 0px navy;
   }
@@ -169,7 +165,7 @@ const StyledSectionThreeTitle = styled.div`
   width: 115px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
@@ -178,7 +174,7 @@ const StyledSectionThreeContent = styled.div`
   margin: 0 auto;
   width: 32vw;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
   }
 `;
@@ -188,7 +184,7 @@ const StyledSectionFour = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     border-bottom: solid 0px navy;
   }
@@ -201,7 +197,7 @@ const StyledSectionFourTitle = styled.div`
   width: 205px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
@@ -226,40 +222,40 @@ const StyledSectionFive = styled.div`
   p {
     font-size: 20px;
   }
-`
+`;
 const StyledPitchContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 70vw;
-  @media(max-width: 1100px){
+  @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 const StyledSteps = styled.div`
   font-family: "Play", sans-serif;
   width: 32vw;
-  @media(max-width: 1100px){
+  @media (max-width: 1100px) {
     width: 70vw;
   }
-`
+`;
 const StyledPitch = styled.div`
   font-family: "Play", sans-serif;
   width: 32vw;
-  @media(max-width: 1100px){
+  @media (max-width: 1100px) {
     width: 70vw;
   }
-`
+`;
 const StyledSectionSix = styled.div`
   margin: 0 auto;
   width: 70vw;
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     border-bottom: solid 0px white;
   }
-`
+`;
 const StyledSectionSixTitle = styled.div`
   background-color: navy;
   color: gold;
@@ -268,11 +264,11 @@ const StyledSectionSixTitle = styled.div`
   width: 50px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
-`
+`;
 const StyledSectionSixContent = styled.div`
   margin: 0 auto;
   width: 70vw;
@@ -282,7 +278,7 @@ const StyledSectionSixContent = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
-`
+`;
 const StyledSectionSeven = styled.div`
   margin: 0 auto;
   width: 70vw;
@@ -291,10 +287,10 @@ const StyledSectionSeven = styled.div`
   display: flex;
   justify-content: flex-end;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     border-bottom: solid 0px white;
   }
-`
+`;
 const StyledSectionSevenTitle = styled.div`
   background-color: navy;
   color: gold;
@@ -303,11 +299,11 @@ const StyledSectionSevenTitle = styled.div`
   width: 65px;
   padding: 1%;
   font-family: "Play", sans-serif;
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     width: 70vw;
     text-align: center;
   }
-`
+`;
 const StyledSectionSevenContent = styled.div`
   margin: 0 auto;
   width: 70vw;
@@ -319,11 +315,11 @@ const StyledSectionSevenContent = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
-  @media(max-width:555px){
+  @media (max-width: 555px) {
     flex-direction: column;
     justify-content: center;
   }
-`
+`;
 
 class Home extends Component {
   render() {
@@ -337,13 +333,13 @@ class Home extends Component {
           </StyledNavLinksContainer>
         </StyledTopNav>
         <StyledHeadImage />
-        <StyledMissinStatement>
+        <StyledMissionStatement>
           <p>
             "ACA offers auto claims assistance after you’ve had an accident,
             regardless of fault. We deal with your insurance company and vehicle
             repair, giving you back your time."
           </p>
-        </StyledMissinStatement>
+        </StyledMissionStatement>
         <StyledSectionOne>
           <StyledSectionOneTitle>
             Effortless Auto Damage Repairs After a Car Accident
@@ -394,78 +390,164 @@ class Home extends Component {
         </StyledSectionTwoContent>
         <StyledSecThreeFourContainer>
           <div>
-          <StyledSectionThree>
-            <StyledSectionThreeTitle>
-              What’s the Cost of Using ACA?
-            </StyledSectionThreeTitle>
-          </StyledSectionThree>
-          <StyledSectionThreeContent>
-            <p>The best part – you DO NOT PAY for our claim services. Our services are paid by the third party vendors we use, not by you. We also offer an add-on concierge service for getting your car to and from the body shop.</p>
-          </StyledSectionThreeContent>
+            <StyledSectionThree>
+              <StyledSectionThreeTitle>
+                What’s the Cost of Using ACA?
+              </StyledSectionThreeTitle>
+            </StyledSectionThree>
+            <StyledSectionThreeContent>
+              <p>
+                The best part – you DO NOT PAY for our claim services. Our
+                services are paid by the third party vendors we use, not by you.
+                We also offer an add-on concierge service for getting your car
+                to and from the body shop.
+              </p>
+            </StyledSectionThreeContent>
           </div>
           <div>
-          <StyledSectionFour>
-            <StyledSectionFourTitle>
-              Why Not File the Insurance Claim Myself?
-            </StyledSectionFourTitle>
-          </StyledSectionFour>
-          <StyledSectionThreeContent>
-            <p>Managing the insurance process yourself may not give you the best outcome. The insurance procedures on how to get property damage claims completed are not always easy to navigate or understand. The process does not favor you; it favors the insurance company.  </p>
-          </StyledSectionThreeContent>
+            <StyledSectionFour>
+              <StyledSectionFourTitle>
+                Why Not File the Insurance Claim Myself?
+              </StyledSectionFourTitle>
+            </StyledSectionFour>
+            <StyledSectionThreeContent>
+              <p>
+                Managing the insurance process yourself may not give you the
+                best outcome. The insurance procedures on how to get property
+                damage claims completed are not always easy to navigate or
+                understand. The process does not favor you; it favors the
+                insurance company.{" "}
+              </p>
+            </StyledSectionThreeContent>
           </div>
         </StyledSecThreeFourContainer>
         <StyledSectionFive>
-          <span>If you rely on your insurance company to guide you through the claim process, here’s what happens next:</span>
+          <span>
+            If you rely on your insurance company to guide you through the claim
+            process, here’s what happens next:
+          </span>
           <StyledPitchContainer>
             <StyledSteps>
               <ul>
-                <li>YOU stay on the phone with the insurance company while the claim is filled out</li>
-                <li>YOU call around to body shops for estimates, hoping you choose a good one</li>
-                <li>YOU file the claim with the other insurance company if you are not at fault in the accident.</li>
-                <li>YOU make calls and stay on the phone while liability is decided between the insurance companies</li>
-                <li>YOU are back on the phone with the insurance company getting approval for body shop repairs</li>
-                <li>YOU arrange to get your damaged vehicle to the body shop</li>
-                <li>YOU figure out how to get from the body shop to the rental car company</li>
-                <li>YOU are at the mercy of whatever cost-saving deals the insurance company has worked out with the body shop</li>
-                <li>YOU are on the phone with both insurance companies trying to get your claim moved through the process</li>
+                <li>
+                  YOU stay on the phone with the insurance company while the
+                  claim is filled out
+                </li>
+                <li>
+                  YOU call around to body shops for estimates, hoping you choose
+                  a good one
+                </li>
+                <li>
+                  YOU file the claim with the other insurance company if you are
+                  not at fault in the accident.
+                </li>
+                <li>
+                  YOU make calls and stay on the phone while liability is
+                  decided between the insurance companies
+                </li>
+                <li>
+                  YOU are back on the phone with the insurance company getting
+                  approval for body shop repairs
+                </li>
+                <li>
+                  YOU arrange to get your damaged vehicle to the body shop
+                </li>
+                <li>
+                  YOU figure out how to get from the body shop to the rental car
+                  company
+                </li>
+                <li>
+                  YOU are at the mercy of whatever cost-saving deals the
+                  insurance company has worked out with the body shop
+                </li>
+                <li>
+                  YOU are on the phone with both insurance companies trying to
+                  get your claim moved through the process
+                </li>
               </ul>
             </StyledSteps>
             <StyledPitch>
               <p>Does that sound like a good use of your valuable time?</p>
-              <p>At ACA we know the guidelines, laws and what the process should be. We know when things are moving at market standard. It’s our job to move your claim through, to get your vehicle repaired, and keep you informed as we move through the process.</p>
-              <p>We also have insider knowledge of the car repair process, and strong relationships with highly qualified body shops. Plus, we don’t require the body shops to conform to anything less than what they are experts in.</p>
+              <p>
+                At ACA we know the guidelines, laws and what the process should
+                be. We know when things are moving at market standard. It’s our
+                job to move your claim through, to get your vehicle repaired,
+                and keep you informed as we move through the process.
+              </p>
+              <p>
+                We also have insider knowledge of the car repair process, and
+                strong relationships with highly qualified body shops. Plus, we
+                don’t require the body shops to conform to anything less than
+                what they are experts in.
+              </p>
             </StyledPitch>
           </StyledPitchContainer>
         </StyledSectionFive>
         <StyledSectionSix id="faq">
-          <StyledSectionSixTitle>
-            FAQ
-          </StyledSectionSixTitle>
+          <StyledSectionSixTitle>FAQ</StyledSectionSixTitle>
         </StyledSectionSix>
         <StyledSectionSixContent>
           <span>How much do your services cost? </span>
-          <p>We manage the insurance claim and property damage repair process at no charge to you. If you choose to utilize our network of bodyshops. Should you choose an out of network shop it is a flat fee of $150.00. Remember the choice is always yours. </p>
+          <p>
+            We manage the insurance claim and property damage repair process at
+            no charge to you. If you choose to utilize our network of bodyshops.
+            Should you choose an out of network shop it is a flat fee of
+            $150.00. Remember the choice is always yours.{" "}
+          </p>
           <span>What if the accident is my fault? Can you still help me? </span>
-          <p>Yes! No matter who is liable, or whose fault it is, we are here to help remove the stress of the accident from your life.</p>
+          <p>
+            Yes! No matter who is liable, or whose fault it is, we are here to
+            help remove the stress of the accident from your life.
+          </p>
           <span>Why not file the insurance claim myself? </span>
-          <p>You certainly can do that. But keep in mind that the insurance companies work in the best interest of the insurance companies, not you. You’ll spend a lot of time on the phone, a lot of time dealing with finding a body shop, a lot of time doing all this extra work on top of your normal day-to-day commitments. </p>
-          <p>On top of that, information about your claim doesn’t get to your insurance company and consequently to you quickly. Further, if you’re a claimant with an insurance company (in other words, if you were not at fault in the accident) you will need to fight for your claim at times and you may not be familiar with industry standards and laws that dictate how the process should be going. The burden of proof is on you. </p>
-          <span>Is there any part of the accident repair process you can’t handle for me? </span>
-          <p>We can’t handle personal injury claims for you. We can handle everything with the vehicle, though.</p>
-          <span>Why doesn’t my attorney handle the claim and repair for me?</span>
-          <p>Attorneys outsource this work to the professionals who do it best. You benefit in the end because having this outsourced cuts down on billable time from your attorney.</p>
+          <p>
+            You certainly can do that. But keep in mind that the insurance
+            companies work in the best interest of the insurance companies, not
+            you. You’ll spend a lot of time on the phone, a lot of time dealing
+            with finding a body shop, a lot of time doing all this extra work on
+            top of your normal day-to-day commitments.{" "}
+          </p>
+          <p>
+            On top of that, information about your claim doesn’t get to your
+            insurance company and consequently to you quickly. Further, if
+            you’re a claimant with an insurance company (in other words, if you
+            were not at fault in the accident) you will need to fight for your
+            claim at times and you may not be familiar with industry standards
+            and laws that dictate how the process should be going. The burden of
+            proof is on you.{" "}
+          </p>
+          <span>
+            Is there any part of the accident repair process you can’t handle
+            for me?{" "}
+          </span>
+          <p>
+            We can’t handle personal injury claims for you. We can handle
+            everything with the vehicle, though.
+          </p>
+          <span>
+            Why doesn’t my attorney handle the claim and repair for me?
+          </span>
+          <p>
+            Attorneys outsource this work to the professionals who do it best.
+            You benefit in the end because having this outsourced cuts down on
+            billable time from your attorney.
+          </p>
         </StyledSectionSixContent>
         <StyledSectionSeven id="contact">
           <StyledSectionSevenTitle>Contact</StyledSectionSevenTitle>
         </StyledSectionSeven>
         <StyledSectionSevenContent>
-          <p><span>Email</span> email@aca.com</p>
-          <p><span>Phone</span> 555-0123</p>
-          <p><span>Address</span> 555 ACA Boulevard</p>
+          <p>
+            <span>Email</span> email@aca.com
+          </p>
+          <p>
+            <span>Phone</span> 555-0123
+          </p>
+          <p>
+            <span>Address</span> 555 ACA Boulevard
+          </p>
         </StyledSectionSevenContent>
-        <StyledFooter>
-          &copy; Auto Claims Assistants 2018
-        </StyledFooter>
+        <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
       </div>
     );
   }
