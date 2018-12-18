@@ -60,6 +60,9 @@ const StyledSectionOne = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    border-bottom: solid 0px white;
+  }
 `;
 
 const StyledSectionOneTitle = styled.div`
@@ -70,11 +73,14 @@ const StyledSectionOneTitle = styled.div`
   width: 380px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `;
 const StyledSectionOneContent = styled.div`
   margin: 0 auto;
   width: 70vw;
-  margin-top: 20px;
   font-family: "Play", sans-serif;
 `;
 const StyledSectionTwo = styled.div`
@@ -94,6 +100,10 @@ const StyledSectionTwoTitle = styled.div`
   width: 115px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `;
 const StyledSectionTwoContent = styled.div`
   margin: 0 auto;
@@ -133,6 +143,10 @@ const StyledSecThreeFourContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  @media(max-width:1100px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const StyledSectionThree = styled.div`
   margin: 0 auto;
@@ -140,6 +154,10 @@ const StyledSectionThree = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    border-bottom: solid 0px navy;
+  }
 `;
 const StyledSectionThreeTitle = styled.div`
   background-color: navy;
@@ -149,11 +167,21 @@ const StyledSectionThreeTitle = styled.div`
   width: 115px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `;
 const StyledSectionThreeContent = styled.div`
   margin: 0 auto;
   width: 32vw;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    border: .5px solid grey;
+    border-top: 0px solid grey;
+    padding: .9%;
+  }
 `;
 const StyledSectionFour = styled.div`
   margin: 0 auto;
@@ -161,6 +189,10 @@ const StyledSectionFour = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    border-bottom: solid 0px navy;
+  }
 `;
 const StyledSectionFourTitle = styled.div`
   background-color: navy;
@@ -170,6 +202,10 @@ const StyledSectionFourTitle = styled.div`
   width: 205px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `;
 const StyledSectionFive = styled.div`
   margin: 0 auto;
@@ -196,14 +232,24 @@ const StyledPitchContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 70vw;
+  @media(max-width: 1100px){
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const StyledSteps = styled.div`
   font-family: "Play", sans-serif;
   width: 32vw;
+  @media(max-width: 1100px){
+    width: 70vw;
+  }
 `
 const StyledPitch = styled.div`
   font-family: "Play", sans-serif;
   width: 32vw;
+  @media(max-width: 1100px){
+    width: 70vw;
+  }
 `
 const StyledSectionSix = styled.div`
   margin: 0 auto;
@@ -211,6 +257,9 @@ const StyledSectionSix = styled.div`
   border-bottom: solid 3px navy;
   margin-top: 80px;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    border-bottom: solid 0px white;
+  }
 `
 const StyledSectionSixTitle = styled.div`
   background-color: navy;
@@ -220,6 +269,10 @@ const StyledSectionSixTitle = styled.div`
   width: 50px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `
 const StyledSectionSixContent = styled.div`
   margin: 0 auto;
@@ -239,6 +292,9 @@ const StyledSectionSeven = styled.div`
   display: flex;
   justify-content: flex-end;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    border-bottom: solid 0px white;
+  }
 `
 const StyledSectionSevenTitle = styled.div`
   background-color: navy;
@@ -248,6 +304,10 @@ const StyledSectionSevenTitle = styled.div`
   width: 65px;
   padding: 1%;
   font-family: "Play", sans-serif;
+  @media(max-width:555px){
+    width: 70vw;
+    text-align: center;
+  }
 `
 const StyledSectionSevenContent = styled.div`
   margin: 0 auto;
@@ -259,6 +319,10 @@ const StyledSectionSevenContent = styled.div`
   span {
     font-size: 20px;
     font-weight: bold;
+  }
+  @media(max-width:555px){
+    flex-direction: column;
+    justify-content: center;
   }
 `
 
