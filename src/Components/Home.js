@@ -132,7 +132,6 @@ const StyledSectionTwoCard = styled.div`
   justify-content: flex-start;
   padding-top: 3%;
   font-family: "Play", sans-serif;
-  overflow: scroll;
   @media(max-width:1100px){
     margin-bottom: 15px;
   }
