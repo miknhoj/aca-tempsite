@@ -492,7 +492,7 @@ class Home extends Component {
             We manage the insurance claim and property damage repair process at
             no charge to you. If you choose to utilize our network of bodyshops.
             Should you choose an out of network shop it is a flat fee of
-            $150.00. Remember the choice is always yours.{" "}
+            $150.00. Remember the choice is always yours.
           </p>
           <span>What if the accident is my fault? Can you still help me? </span>
           <p>
@@ -505,7 +505,7 @@ class Home extends Component {
             companies work in the best interest of the insurance companies, not
             you. You’ll spend a lot of time on the phone, a lot of time dealing
             with finding a body shop, a lot of time doing all this extra work on
-            top of your normal day-to-day commitments.{" "}
+            top of your normal day-to-day commitments.
           </p>
           <p>
             On top of that, information about your claim doesn’t get to your
@@ -514,11 +514,11 @@ class Home extends Component {
             were not at fault in the accident) you will need to fight for your
             claim at times and you may not be familiar with industry standards
             and laws that dictate how the process should be going. The burden of
-            proof is on you.{" "}
+            proof is on you.
           </p>
           <span>
             Is there any part of the accident repair process you can’t handle
-            for me?{" "}
+            for me?
           </span>
           <p>
             We can’t handle personal injury claims for you. We can handle
