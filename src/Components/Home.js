@@ -35,7 +35,7 @@ const StyledNavLinksContainer = styled.div`
 const StyledHeadImage = styled.div`
   background-image: url("https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   width: 100vw;
-  height: 500px;
+  height: 80vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,9 +178,6 @@ const StyledSectionThreeContent = styled.div`
   font-family: "Play", sans-serif;
   @media(max-width:555px){
     width: 70vw;
-    border: .5px solid grey;
-    border-top: 0px solid grey;
-    padding: .9%;
   }
 `;
 const StyledSectionFour = styled.div`
