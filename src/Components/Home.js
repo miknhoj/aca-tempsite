@@ -40,6 +40,9 @@ const StyledHeadImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media(max-width: 555px){
+    display: none;
+  }
 `;
 const StyledMissinStatement = styled.div`
   margin: 0 auto;
