@@ -65,12 +65,12 @@ const StyledSectionOne = styled.div`
     border-bottom: solid 0px white;
   }
 `;
-const StyledSectionOneTitle = styled.div`
+const StyledSectionTitle = styled.div`
   background-color: navy;
   color: gold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  width: 380px;
+  display: inline-block;
   padding: 1%;
   font-family: "Play", sans-serif;
   @media (max-width: 555px) {
@@ -91,19 +91,6 @@ const StyledSectionTwo = styled.div`
   display: flex;
   justify-content: flex-end;
   font-family: "Play", sans-serif;
-`;
-const StyledSectionTwoTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 115px;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
-  }
 `;
 const StyledSectionTwoContent = styled.div`
   margin: 0 auto;
@@ -135,7 +122,7 @@ const StyledSectionTwoCard = styled.div`
 const StyledCardIcon = styled.img`
   height: 85px;
 `;
-const StyledSecThreeFourContainer = styled.div`
+const StyledHalfSectionContainer = styled.div`
   margin: 0 auto;
   width: 70vw;
   display: flex;
@@ -146,7 +133,7 @@ const StyledSecThreeFourContainer = styled.div`
     align-items: center;
   }
 `;
-const StyledSectionThree = styled.div`
+const StyledHalfSection = styled.div`
   margin: 0 auto;
   width: 32vw;
   border-bottom: solid 3px navy;
@@ -157,49 +144,12 @@ const StyledSectionThree = styled.div`
     border-bottom: solid 0px navy;
   }
 `;
-const StyledSectionThreeTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 115px;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
-  }
-`;
-const StyledSectionThreeContent = styled.div`
+const StyledHalfSectionContent = styled.div`
   margin: 0 auto;
   width: 32vw;
   font-family: "Play", sans-serif;
   @media (max-width: 555px) {
     width: 70vw;
-  }
-`;
-const StyledSectionFour = styled.div`
-  margin: 0 auto;
-  width: 32vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    border-bottom: solid 0px navy;
-  }
-`;
-const StyledSectionFourTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 205px;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
   }
 `;
 const StyledSectionFive = styled.div`
@@ -256,19 +206,6 @@ const StyledSectionSix = styled.div`
     border-bottom: solid 0px white;
   }
 `;
-const StyledSectionSixTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 50px;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
-  }
-`;
 const StyledSectionSixContent = styled.div`
   margin: 0 auto;
   width: 70vw;
@@ -289,19 +226,6 @@ const StyledSectionSeven = styled.div`
   font-family: "Play", sans-serif;
   @media (max-width: 555px) {
     border-bottom: solid 0px white;
-  }
-`;
-const StyledSectionSevenTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 65px;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
   }
 `;
 const StyledSectionSevenContent = styled.div`
@@ -341,9 +265,9 @@ class Home extends Component {
           </p>
         </StyledMissionStatement>
         <StyledSectionOne>
-          <StyledSectionOneTitle>
+          <StyledSectionTitle>
             Effortless Auto Damage Repairs After a Car Accident
-          </StyledSectionOneTitle>
+          </StyledSectionTitle>
         </StyledSectionOne>
         <StyledSectionOneContent>
           <p>
@@ -365,7 +289,7 @@ class Home extends Component {
           </p>
         </StyledSectionOneContent>
         <StyledSectionTwo>
-          <StyledSectionTwoTitle>How's it work?</StyledSectionTwoTitle>
+          <StyledSectionTitle>How's it work?</StyledSectionTitle>
         </StyledSectionTwo>
         <StyledSectionTwoContent>
           <StyledSectionTwoCard>
@@ -388,29 +312,29 @@ class Home extends Component {
             </p>
           </StyledSectionTwoCard>
         </StyledSectionTwoContent>
-        <StyledSecThreeFourContainer>
+        <StyledHalfSectionContainer>
           <div>
-            <StyledSectionThree>
-              <StyledSectionThreeTitle>
+            <StyledHalfSection>
+              <StyledSectionTitle>
                 What’s the Cost of Using ACA?
-              </StyledSectionThreeTitle>
-            </StyledSectionThree>
-            <StyledSectionThreeContent>
+              </StyledSectionTitle>
+            </StyledHalfSection>
+            <StyledHalfSectionContent>
               <p>
                 The best part – you DO NOT PAY for our claim services. Our
                 services are paid by the third party vendors we use, not by you.
                 We also offer an add-on concierge service for getting your car
                 to and from the body shop.
               </p>
-            </StyledSectionThreeContent>
+            </StyledHalfSectionContent>
           </div>
           <div>
-            <StyledSectionFour>
-              <StyledSectionFourTitle>
+            <StyledHalfSection>
+              <StyledSectionTitle>
                 Why Not File the Insurance Claim Myself?
-              </StyledSectionFourTitle>
-            </StyledSectionFour>
-            <StyledSectionThreeContent>
+              </StyledSectionTitle>
+            </StyledHalfSection>
+            <StyledHalfSectionContent>
               <p>
                 Managing the insurance process yourself may not give you the
                 best outcome. The insurance procedures on how to get property
@@ -418,9 +342,9 @@ class Home extends Component {
                 understand. The process does not favor you; it favors the
                 insurance company.{" "}
               </p>
-            </StyledSectionThreeContent>
+            </StyledHalfSectionContent>
           </div>
-        </StyledSecThreeFourContainer>
+        </StyledHalfSectionContainer>
         <StyledSectionFive>
           <span>
             If you rely on your insurance company to guide you through the claim
@@ -484,7 +408,7 @@ class Home extends Component {
           </StyledPitchContainer>
         </StyledSectionFive>
         <StyledSectionSix id="faq">
-          <StyledSectionSixTitle>FAQ</StyledSectionSixTitle>
+          <StyledSectionTitle>FAQ</StyledSectionTitle>
         </StyledSectionSix>
         <StyledSectionSixContent>
           <span>How much do your services cost? </span>
@@ -534,7 +458,7 @@ class Home extends Component {
           </p>
         </StyledSectionSixContent>
         <StyledSectionSeven id="contact">
-          <StyledSectionSevenTitle>Contact</StyledSectionSevenTitle>
+          <StyledSectionTitle>Contact</StyledSectionTitle>
         </StyledSectionSeven>
         <StyledSectionSevenContent>
           <p>
