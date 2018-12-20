@@ -55,16 +55,6 @@ const StyledMissionStatement = styled.div`
     font-weight: 700;
   }
 `;
-const StyledSectionOne = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    border-bottom: solid 0px white;
-  }
-`;
 const StyledSectionTitle = styled.div`
   background-color: navy;
   color: gold;
@@ -78,12 +68,27 @@ const StyledSectionTitle = styled.div`
     text-align: center;
   }
 `;
-const StyledSectionOneContent = styled.div`
+const StyledSection = styled.div`
   margin: 0 auto;
   width: 70vw;
+  border-bottom: solid 3px navy;
+  margin-top: 80px;
   font-family: "Play", sans-serif;
+  @media (max-width: 555px) {
+    border-bottom: solid 0px white;
+  }
 `;
-const StyledSectionTwo = styled.div`
+const StyledSectionContent = styled.div`
+  margin: 0 auto;
+  width: 70vw;
+  margin-top: 20px;
+  font-family: "Play", sans-serif;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+`;
+const StyledSectionFlexEnd = styled.div`
   margin: 0 auto;
   width: 70vw;
   border-bottom: solid 3px navy;
@@ -91,20 +96,27 @@ const StyledSectionTwo = styled.div`
   display: flex;
   justify-content: flex-end;
   font-family: "Play", sans-serif;
+  @media (max-width: 555px) {
+    border-bottom: solid 0px white;
+  }
 `;
-const StyledSectionTwoContent = styled.div`
+const StyledSectionFlexSpaceBetween = styled.div`
   margin: 0 auto;
   width: 70vw;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   font-family: "Play", sans-serif;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
   @media (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
   }
 `;
-const StyledSectionTwoCard = styled.div`
+const StyledCard = styled.div`
   height: 250px;
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -121,17 +133,6 @@ const StyledSectionTwoCard = styled.div`
 `;
 const StyledCardIcon = styled.img`
   height: 85px;
-`;
-const StyledHalfSectionContainer = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  @media (max-width: 1100px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `;
 const StyledHalfSection = styled.div`
   margin: 0 auto;
@@ -152,7 +153,7 @@ const StyledHalfSectionContent = styled.div`
     width: 70vw;
   }
 `;
-const StyledSectionFive = styled.div`
+const StyledSectionFlexColumn = styled.div`
   margin: 0 auto;
   width: 70vw;
   margin-top: 80px;
@@ -173,15 +174,6 @@ const StyledSectionFive = styled.div`
     font-size: 20px;
   }
 `;
-const StyledPitchContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 70vw;
-  @media (max-width: 1100px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
 const StyledSteps = styled.div`
   font-family: "Play", sans-serif;
   width: 32vw;
@@ -194,54 +186,6 @@ const StyledPitch = styled.div`
   width: 32vw;
   @media (max-width: 1100px) {
     width: 70vw;
-  }
-`;
-const StyledSectionSix = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    border-bottom: solid 0px white;
-  }
-`;
-const StyledSectionSixContent = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  margin-top: 20px;
-  font-family: "Play", sans-serif;
-  span {
-    font-size: 20px;
-    font-weight: bold;
-  }
-`;
-const StyledSectionSeven = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    border-bottom: solid 0px white;
-  }
-`;
-const StyledSectionSevenContent = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  margin-top: 20px;
-  font-family: "Play", sans-serif;
-  display: flex;
-  justify-content: space-around;
-  span {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  @media (max-width: 555px) {
-    flex-direction: column;
-    justify-content: center;
   }
 `;
 
@@ -264,12 +208,12 @@ class Home extends Component {
             repair, giving you back your time."
           </p>
         </StyledMissionStatement>
-        <StyledSectionOne>
+        <StyledSection>
           <StyledSectionTitle>
             Effortless Auto Damage Repairs After a Car Accident
           </StyledSectionTitle>
-        </StyledSectionOne>
-        <StyledSectionOneContent>
+        </StyledSection>
+        <StyledSectionContent>
           <p>
             ACA comes to the rescue after you’ve been involved in a crash, and
             before you’ve spent valuable time on cleaning up the aftermath. We
@@ -287,32 +231,32 @@ class Home extends Component {
             aggravation of insurance claims and vehicle repair while you get on
             with your life.
           </p>
-        </StyledSectionOneContent>
-        <StyledSectionTwo>
+        </StyledSectionContent>
+        <StyledSectionFlexEnd>
           <StyledSectionTitle>How's it work?</StyledSectionTitle>
-        </StyledSectionTwo>
-        <StyledSectionTwoContent>
-          <StyledSectionTwoCard>
+        </StyledSectionFlexEnd>
+        <StyledSectionFlexSpaceBetween>
+          <StyledCard>
             <StyledCardIcon src="https://i.imgur.com/OltMXHX.png" />
             <p>You’re involved in a crash and your vehicle needs repairs.</p>
-          </StyledSectionTwoCard>
-          <StyledSectionTwoCard>
+          </StyledCard>
+          <StyledCard>
             <StyledCardIcon src="https://i.imgur.com/OitWknR.png" />
             <p>
               Call ACA after your accident, before filing your claim with your
               insurance company.
             </p>
-          </StyledSectionTwoCard>
-          <StyledSectionTwoCard>
+          </StyledCard>
+          <StyledCard>
             <StyledCardIcon src="https://i.imgur.com/ez7R13u.png" />
             <p>
               We take it from here. We file the claim, deal with both parties’
               insurance companies, even get your car to and from the body shop
               if you’d like. You get on with your life.
             </p>
-          </StyledSectionTwoCard>
-        </StyledSectionTwoContent>
-        <StyledHalfSectionContainer>
+          </StyledCard>
+        </StyledSectionFlexSpaceBetween>
+        <StyledSectionFlexSpaceBetween>
           <div>
             <StyledHalfSection>
               <StyledSectionTitle>
@@ -340,17 +284,17 @@ class Home extends Component {
                 best outcome. The insurance procedures on how to get property
                 damage claims completed are not always easy to navigate or
                 understand. The process does not favor you; it favors the
-                insurance company.{" "}
+                insurance company.
               </p>
             </StyledHalfSectionContent>
           </div>
-        </StyledHalfSectionContainer>
-        <StyledSectionFive>
+        </StyledSectionFlexSpaceBetween>
+        <StyledSectionFlexColumn>
           <span>
             If you rely on your insurance company to guide you through the claim
             process, here’s what happens next:
           </span>
-          <StyledPitchContainer>
+          <StyledSectionFlexSpaceBetween>
             <StyledSteps>
               <ul>
                 <li>
@@ -405,12 +349,12 @@ class Home extends Component {
                 what they are experts in.
               </p>
             </StyledPitch>
-          </StyledPitchContainer>
-        </StyledSectionFive>
-        <StyledSectionSix id="faq">
+          </StyledSectionFlexSpaceBetween>
+        </StyledSectionFlexColumn>
+        <StyledSection id="faq">
           <StyledSectionTitle>FAQ</StyledSectionTitle>
-        </StyledSectionSix>
-        <StyledSectionSixContent>
+        </StyledSection>
+        <StyledSectionContent>
           <span>How much do your services cost? </span>
           <p>
             We manage the insurance claim and property damage repair process at
@@ -456,11 +400,11 @@ class Home extends Component {
             You benefit in the end because having this outsourced cuts down on
             billable time from your attorney.
           </p>
-        </StyledSectionSixContent>
-        <StyledSectionSeven id="contact">
+        </StyledSectionContent>
+        <StyledSectionFlexEnd id="contact">
           <StyledSectionTitle>Contact</StyledSectionTitle>
-        </StyledSectionSeven>
-        <StyledSectionSevenContent>
+        </StyledSectionFlexEnd>
+        <StyledSectionFlexSpaceBetween>
           <p>
             <span>Email</span> email@aca.com
           </p>
@@ -470,7 +414,7 @@ class Home extends Component {
           <p>
             <span>Address</span> 555 ACA Boulevard
           </p>
-        </StyledSectionSevenContent>
+        </StyledSectionFlexSpaceBetween>
         <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
       </div>
     );
