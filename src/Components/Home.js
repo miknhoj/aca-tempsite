@@ -2,10 +2,20 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const StyledTopNav = styled.div`
+  margin: 0 auto;
+  margin-top: 50px;
   height: 60px;
-  width: 100vw;
-  background-color: navy;
-  color: gold;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    background: -webkit-linear-gradient(#FAD961, #F7A51C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
 const StyledFooter = styled.div`
   height: 30px;
@@ -17,26 +27,21 @@ const StyledFooter = styled.div`
   text-align: center;
 `;
 const StyledNavLinksContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  max-width: 500px;
-  span {
-    font-size: 55px;
-    font-family: "Play", sans-serif;
-  }
   a {
-    padding-top: 4%;
+    margin-left: 85px;
     text-decoration: none;
-    color: gold;
-    font-family: "Play", sans-serif;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
   }
 `;
 const StyledHeadImage = styled.div`
-  background-image: url("https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  width: 100vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.1&permmsgid=msg-f:1620494088208967957&th=167d26c99850e915&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_W3WSklmwoyGQEqW0k9mwE0akHGYiL2i6g6sP2oMtOvd5HWQacFdVy-Pmtc5w_zYkL1btkuYSCooKlT_oOP6xQY014GhThm7MhsSffbAPszcpVcgR3Yown2_o&disp=emb");
+  width: 80vw;
   height: 80vh;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   @media (max-width: 555px) {
@@ -46,67 +51,41 @@ const StyledHeadImage = styled.div`
 const StyledMissionStatement = styled.div`
   margin: 0 auto;
   width: 60vw;
-  margin-top: 80px;
+  margin-top: 60px;
+  text-align: center;
   p {
-    color: lightgray;
-    font-style: italic;
-    font-family: "Play", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-  }
-`;
-const StyledSectionTitle = styled.div`
-  background-color: navy;
-  color: gold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  display: inline-block;
-  padding: 1%;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
   }
 `;
 const StyledSection = styled.div`
   margin: 0 auto;
   width: 70vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    border-bottom: solid 0px white;
-  }
-`;
-const StyledSectionContent = styled.div`
-  margin: 0 auto;
-  width: 70vw;
-  margin-top: 20px;
-  font-family: "Play", sans-serif;
-  span {
-    font-size: 20px;
-    font-weight: bold;
+  margin-top: 60px;
+  font-family: 'Nunito Sans', sans-serif;
+  h2 {
+    background: -webkit-linear-gradient(#FAD961, #F7A51C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 const StyledSectionFlexEnd = styled.div`
   margin: 0 auto;
   width: 70vw;
-  border-bottom: solid 3px navy;
-  margin-top: 80px;
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
-    border-bottom: solid 0px white;
-  }
+  text-align: center;
+  margin-top: 60px;
+  background: -webkit-linear-gradient(#FAD961, #F7A51C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-family: 'Nunito Sans', sans-serif;
 `;
 const StyledSectionFlexSpaceBetween = styled.div`
   margin: 0 auto;
   width: 70vw;
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  font-family: "Play", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   span {
     font-size: 20px;
     font-weight: bold;
@@ -117,38 +96,58 @@ const StyledSectionFlexSpaceBetween = styled.div`
   }
 `;
 const StyledCard = styled.div`
-  height: 250px;
+  margin-top: 20px;
   width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+  min-height: 160px;
+  border: 1px solid gray;
+  text-align: left;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 3%;
-  font-family: "Play", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   @media (max-width: 1100px) {
     margin-bottom: 15px;
   }
 `;
+const StyledStepsWithIcons = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  margin-top: 80px;
+  p {
+    margin-top: 50px;
+    text-align: left;
+  }
+`
 const StyledCardIcon = styled.img`
-  height: 85px;
+  height: 75px;
 `;
 const StyledHalfSection = styled.div`
   margin: 0 auto;
   width: 32vw;
-  border-bottom: solid 3px navy;
   margin-top: 80px;
-  font-family: "Play", sans-serif;
-  @media (max-width: 555px) {
+  font-family: 'Nunito Sans', sans-serif;
+  color: gold;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    /* color: gold; */
+    background: -webkit-linear-gradient(#FAD961, #F7A51C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media(max-width: 555px){
     width: 70vw;
-    border-bottom: solid 0px navy;
   }
 `;
 const StyledHalfSectionContent = styled.div`
   margin: 0 auto;
   width: 32vw;
-  font-family: "Play", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   @media (max-width: 555px) {
     width: 70vw;
   }
@@ -156,36 +155,63 @@ const StyledHalfSectionContent = styled.div`
 const StyledSectionFlexColumn = styled.div`
   margin: 0 auto;
   width: 70vw;
-  margin-top: 80px;
+  margin-top: 60px;
+  font-family: 'Nunito Sans', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: "Play", sans-serif;
+  align-content: space-between;
   span {
-    color: lightgray;
-    font-style: italic;
-    font-family: "Play", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    width: 60vw;
-    margin-bottom: 80px;
-  }
-  p {
     font-size: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#FAD961, #F7A51C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 `;
 const StyledSteps = styled.div`
-  font-family: "Play", sans-serif;
-  width: 32vw;
-  @media (max-width: 1100px) {
-    width: 70vw;
-  }
+  font-family: 'Nunito Sans', sans-serif;
+  width: 70vw;
+  margin-bottom: 20px;
 `;
 const StyledPitch = styled.div`
-  font-family: "Play", sans-serif;
-  width: 32vw;
-  @media (max-width: 1100px) {
-    width: 70vw;
+  font-family: 'Nunito Sans', sans-serif;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  p {
+    width: 32vw;
+  }
+`;
+const StyledContactSection = styled.div`
+  margin: 0 auto;
+  width: 70vw;
+  margin-top: 80px;
+  color: gold;
+  font-family: 'Nunito Sans', sans-serif;
+`
+const StyledContactInfo = styled.div`
+  margin: 0 auto;
+  width: 70vw;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Nunito Sans', sans-serif;
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+`
+const StyledFaqSection = styled.div`
+  margin: 0 auto;
+  width: 60vw;
+  margin-top: 60px;
+  font-family: 'Nunito Sans', sans-serif;
+  span {
+    font-weight: bold;
   }
 `;
 
@@ -194,8 +220,9 @@ class Home extends Component {
     return (
       <div>
         <StyledTopNav>
+        <span>ACA</span>
           <StyledNavLinksContainer>
-            <span>ACA</span>
+            <a href="#">ABOUT</a>
             <a href="#faq">FAQ</a>
             <a href="#contact">CONTACT</a>
           </StyledNavLinksContainer>
@@ -204,64 +231,67 @@ class Home extends Component {
         <StyledMissionStatement>
           <p>
             "ACA offers auto claims assistance after you’ve had an accident,
-            regardless of fault. We deal with your insurance company and vehicle
+            regardless of fault.  We deal 
+          </p>
+          <p> 
+            with your insurance company and vehicle
             repair, giving you back your time."
           </p>
         </StyledMissionStatement>
         <StyledSection>
-          <StyledSectionTitle>
+          <h2>
             Effortless Auto Damage Repairs After a Car Accident
-          </StyledSectionTitle>
+          </h2>
         </StyledSection>
-        <StyledSectionContent>
-          <p>
+        <StyledSectionFlexSpaceBetween>
+          <StyledCard>
             ACA comes to the rescue after you’ve been involved in a crash, and
             before you’ve spent valuable time on cleaning up the aftermath. We
             offer auto claims assistance that takes the hassle out of the
             insurance claim and vehicle repair process.
-          </p>
-          <p>
+          </StyledCard>
+          <StyledCard>
+            ACA offers an alternative: let us take care of the details and
+            aggravation of insurance claims and vehicle repair while you get on
+            with your life.
+          </StyledCard>
+          <StyledCard>
             Did you know you have a choice after an accident? You don’t have to
             call your insurance company and go down the path of doing everything
             yourself, at the whim of the insurance company’s timeline and policy
             and procedures that may not be so clear.
-          </p>
-          <p>
-            ACA offers an alternative: let us take care of the details and
-            aggravation of insurance claims and vehicle repair while you get on
-            with your life.
-          </p>
-        </StyledSectionContent>
+          </StyledCard>
+        </StyledSectionFlexSpaceBetween>
         <StyledSectionFlexEnd>
-          <StyledSectionTitle>How's it work?</StyledSectionTitle>
+          <h2>How's it work?</h2>
         </StyledSectionFlexEnd>
         <StyledSectionFlexSpaceBetween>
-          <StyledCard>
-            <StyledCardIcon src="https://i.imgur.com/OltMXHX.png" />
+          <StyledStepsWithIcons>
+            <StyledCardIcon src="https://i.imgur.com/AjDxCKr.png?1" />
             <p>You’re involved in a crash and your vehicle needs repairs.</p>
-          </StyledCard>
-          <StyledCard>
-            <StyledCardIcon src="https://i.imgur.com/OitWknR.png" />
+          </StyledStepsWithIcons>
+          <StyledStepsWithIcons>
+            <StyledCardIcon src="https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.7&permmsgid=msg-f:1620494967424139638&th=167d27964d9fc176&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8CkCaR6LxwoY_9kRt7VvDyrCEbgI2LXFHUgYiFyGHCweXm7CBosgThlyq6Nwk6P5ZMdXF8-egQy5ObLw171kWj2AmxuEkJQh11vGHBhYi4OxZzxmEgNkexmMA&disp=emb" />
             <p>
               Call ACA after your accident, before filing your claim with your
               insurance company.
             </p>
-          </StyledCard>
-          <StyledCard>
-            <StyledCardIcon src="https://i.imgur.com/ez7R13u.png" />
+          </StyledStepsWithIcons>
+          <StyledStepsWithIcons>
+            <StyledCardIcon src="https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.6&permmsgid=msg-f:1620494967424139638&th=167d27964d9fc176&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-xGRUQwDNsbILDHhAgheSbJm9x1zVc_abu29KD19Exj1xU0hNMFU94Mp0NZk53wa6FUmwhEIV9NR40qM4BIskgD2Ev4IYS1TKUWu6MvRvUzhRJHgeYFsmQJBg&disp=emb" />
             <p>
               We take it from here. We file the claim, deal with both parties’
               insurance companies, even get your car to and from the body shop
               if you’d like. You get on with your life.
             </p>
-          </StyledCard>
+          </StyledStepsWithIcons>
         </StyledSectionFlexSpaceBetween>
         <StyledSectionFlexSpaceBetween>
           <div>
             <StyledHalfSection>
-              <StyledSectionTitle>
+              <h2>
                 What’s the Cost of Using ACA?
-              </StyledSectionTitle>
+              </h2>
             </StyledHalfSection>
             <StyledHalfSectionContent>
               <p>
@@ -274,9 +304,9 @@ class Home extends Component {
           </div>
           <div>
             <StyledHalfSection>
-              <StyledSectionTitle>
+              <h2>
                 Why Not File the Insurance Claim Myself?
-              </StyledSectionTitle>
+              </h2>
             </StyledHalfSection>
             <StyledHalfSectionContent>
               <p>
@@ -294,48 +324,46 @@ class Home extends Component {
             If you rely on your insurance company to guide you through the claim
             process, here’s what happens next:
           </span>
-          <StyledSectionFlexSpaceBetween>
+          
             <StyledSteps>
-              <ul>
-                <li>
+                <p>
                   YOU stay on the phone with the insurance company while the
                   claim is filled out
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU call around to body shops for estimates, hoping you choose
                   a good one
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU file the claim with the other insurance company if you are
                   not at fault in the accident.
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU make calls and stay on the phone while liability is
                   decided between the insurance companies
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU are back on the phone with the insurance company getting
                   approval for body shop repairs
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU arrange to get your damaged vehicle to the body shop
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU figure out how to get from the body shop to the rental car
                   company
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU are at the mercy of whatever cost-saving deals the
                   insurance company has worked out with the body shop
-                </li>
-                <li>
+                </p>
+                <p>
                   YOU are on the phone with both insurance companies trying to
                   get your claim moved through the process
-                </li>
-              </ul>
+                </p>
             </StyledSteps>
+            <span>Does that sound like a good use of your valuable time?</span>
             <StyledPitch>
-              <p>Does that sound like a good use of your valuable time?</p>
               <p>
                 At ACA we know the guidelines, laws and what the process should
                 be. We know when things are moving at market standard. It’s our
@@ -349,12 +377,12 @@ class Home extends Component {
                 what they are experts in.
               </p>
             </StyledPitch>
-          </StyledSectionFlexSpaceBetween>
+          
         </StyledSectionFlexColumn>
         <StyledSection id="faq">
-          <StyledSectionTitle>FAQ</StyledSectionTitle>
+          <h2>FAQ</h2>
         </StyledSection>
-        <StyledSectionContent>
+        <StyledFaqSection>
           <span>How much do your services cost? </span>
           <p>
             We manage the insurance claim and property damage repair process at
@@ -400,11 +428,11 @@ class Home extends Component {
             You benefit in the end because having this outsourced cuts down on
             billable time from your attorney.
           </p>
-        </StyledSectionContent>
-        <StyledSectionFlexEnd id="contact">
-          <StyledSectionTitle>Contact</StyledSectionTitle>
-        </StyledSectionFlexEnd>
-        <StyledSectionFlexSpaceBetween>
+        </StyledFaqSection>
+        <StyledContactSection id="contact">
+          <h2>Contact</h2>
+        </StyledContactSection>
+        <StyledContactInfo>
           <p>
             <span>Email</span> email@aca.com
           </p>
@@ -414,7 +442,7 @@ class Home extends Component {
           <p>
             <span>Address</span> 555 ACA Boulevard
           </p>
-        </StyledSectionFlexSpaceBetween>
+        </StyledContactInfo>
         <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
       </div>
     );
