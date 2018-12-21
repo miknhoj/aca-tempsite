@@ -434,10 +434,10 @@ class Home extends Component {
         </StyledContactSection>
         <StyledContactInfo>
           <p>
-            <span>Email</span> email@aca.com
+            <span>Email</span> Info@autoclaimsassistance.com
           </p>
           <p>
-            <span>Phone</span> 555-0123
+            <span>Phone</span> 470-213-4952
           </p>
           <p>
             <span>Address</span> 555 ACA Boulevard
