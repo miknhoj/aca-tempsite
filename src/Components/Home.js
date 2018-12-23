@@ -14,6 +14,7 @@ const StyledTopNav = styled.div`
   span {
     font-size: 55px;
     font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
     background: -webkit-linear-gradient(#fad961, #f7a51c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,7 +40,7 @@ const StyledFooter = styled.div`
 const StyledHeadImage = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.1&permmsgid=msg-f:1620494088208967957&th=167d26c99850e915&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_W3WSklmwoyGQEqW0k9mwE0akHGYiL2i6g6sP2oMtOvd5HWQacFdVy-Pmtc5w_zYkL1btkuYSCooKlT_oOP6xQY014GhThm7MhsSffbAPszcpVcgR3Yown2_o&disp=emb");
+  background-image: url("https://i.imgur.com/xisItmf.jpg");
   width: 80vw;
   height: 80vh;
   background-repeat: no-repeat;

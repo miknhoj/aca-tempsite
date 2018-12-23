@@ -175,14 +175,14 @@ class About extends Component {
             <p>You’re involved in a crash and your vehicle needs repairs.</p>
           </StyledStepsWithIcons>
           <StyledStepsWithIcons>
-            <StyledStepsIcons src="https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.7&permmsgid=msg-f:1620494967424139638&th=167d27964d9fc176&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8CkCaR6LxwoY_9kRt7VvDyrCEbgI2LXFHUgYiFyGHCweXm7CBosgThlyq6Nwk6P5ZMdXF8-egQy5ObLw171kWj2AmxuEkJQh11vGHBhYi4OxZzxmEgNkexmMA&disp=emb" />
+            <StyledStepsIcons src="https://i.imgur.com/AjD9YWB.png" />
             <p>
               Call ACA after your accident, before filing your claim with your
               insurance company.
             </p>
           </StyledStepsWithIcons>
           <StyledStepsWithIcons>
-            <StyledStepsIcons src="https://mail.google.com/mail/u/0?ui=2&ik=d95b23bb62&attid=0.1.6&permmsgid=msg-f:1620494967424139638&th=167d27964d9fc176&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-xGRUQwDNsbILDHhAgheSbJm9x1zVc_abu29KD19Exj1xU0hNMFU94Mp0NZk53wa6FUmwhEIV9NR40qM4BIskgD2Ev4IYS1TKUWu6MvRvUzhRJHgeYFsmQJBg&disp=emb" />
+            <StyledStepsIcons src="https://i.imgur.com/br1dKwC.png" />
             <p>
               We take it from here. We file the claim, deal with both parties’
               insurance companies, even get your car to and from the body shop
