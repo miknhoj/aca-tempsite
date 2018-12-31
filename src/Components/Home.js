@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import About from "./About";
 import Faq from "./Faq";
+import Form from "./Form";
 
 const StyledTopNav = styled.div`
   margin: 0 auto;
@@ -77,9 +78,9 @@ class Home extends Component {
         <StyledTopNav>
           <span>ACA</span>
           <StyledNavLinksContainer>
-            <a href="#">ABOUT</a>
+            {/* <a href="#">ABOUT</a>
             <a href="#faq">FAQ</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#contact">CONTACT</a> */}
           </StyledNavLinksContainer>
         </StyledTopNav>
         <StyledHeadImage />
@@ -99,6 +100,8 @@ class Home extends Component {
             <span>Address</span> 555 ACA Boulevard
           </p>
         </StyledContactInfo>
+        <Form />
+
         <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
       </div>
     );
