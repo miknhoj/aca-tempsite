@@ -128,6 +128,12 @@ const StyledPitch = styled.div`
   p {
     width: 32vw;
   }
+  @media(max-width: 800px){
+    flex-direction: column;
+    p {
+      width: 70vw;
+    }
+  }
 `;
 
 class About extends Component {
@@ -167,7 +173,7 @@ class About extends Component {
           </StyledCard>
         </StyledSectionFlexSpaceBetween>
         <StyledSectionTitle>
-          <span><h2>How's it work?</h2></span>
+          <span><h2 id="about">How's it work?</h2></span>
         </StyledSectionTitle>
         <StyledSectionFlexSpaceBetween>
           <StyledStepsWithIcons>

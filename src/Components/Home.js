@@ -20,6 +20,10 @@ const StyledTopNav = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media(max-width: 800px){
+    /* flex-direction: column;
+    align-items: flex-start; */
+  }
 `;
 const StyledNavLinksContainer = styled.div`
   a {
@@ -29,6 +33,11 @@ const StyledNavLinksContainer = styled.div`
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
+  }
+  @media(max-width: 800px){
+    a {
+      margin-left: 15px;
+    }
   }
 `;
 const StyledFooter = styled.div`
@@ -56,10 +65,15 @@ const StyledContactSection = styled.div`
   margin-top: 80px;
   color: gold;
   font-family: "Nunito Sans", sans-serif;
+  h2 {
+    background: -webkit-linear-gradient(#fad961, #f7a51c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
-const StyledContactInfo = styled.div`
+const StyledContactInfoContainer = styled.div`
   margin: 0 auto;
-  width: 70vw;
+  width: 30vw;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -70,6 +84,12 @@ const StyledContactInfo = styled.div`
     font-weight: bold;
   }
 `;
+const StyledContactInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+`
+
 
 class Home extends Component {
   render() {
@@ -78,9 +98,9 @@ class Home extends Component {
         <StyledTopNav>
           <span>ACA</span>
           <StyledNavLinksContainer>
-            {/* <a href="#">ABOUT</a>
+            <a href="#about">ABOUT</a>
             <a href="#faq">FAQ</a>
-            <a href="#contact">CONTACT</a> */}
+            <a href="#contact">CONTACT</a>
           </StyledNavLinksContainer>
         </StyledTopNav>
         <StyledHeadImage />
@@ -89,17 +109,14 @@ class Home extends Component {
         <StyledContactSection id="contact">
           <h2>Contact</h2>
         </StyledContactSection>
-        <StyledContactInfo>
-          <p>
+        <StyledContactInfoContainer>
+          <StyledContactInfo>
             <span>Email</span> Info@autoclaimsassistance.com
-          </p>
-          <p>
+          </StyledContactInfo>
+          <StyledContactInfo>
             <span>Phone</span> 470-213-4952
-          </p>
-          <p>
-            <span>Address</span> 555 ACA Boulevard
-          </p>
-        </StyledContactInfo>
+          </StyledContactInfo>
+        </StyledContactInfoContainer>
         <Form />
 
         <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
