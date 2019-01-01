@@ -73,7 +73,7 @@ const StyledContactSection = styled.div`
 `;
 const StyledContactInfoContainer = styled.div`
   margin: 0 auto;
-  width: 30vw;
+  width: 70vw;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
