@@ -36,9 +36,7 @@ const StyledForm = styled.form`
   input[type='submit'] {
     width: 300px;
     margin: 0 auto;
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: #f7a51c;
     color: white;
     border: 0;
     font-size: 2rem;
