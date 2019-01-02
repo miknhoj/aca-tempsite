@@ -5,10 +5,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05); */
   width: 40vw;
-  /* border: 5px solid white; */
-  /* padding: 20px; */
   font-size: 0.8rem;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;

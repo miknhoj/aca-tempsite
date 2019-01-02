@@ -56,8 +56,6 @@ const StyledHeadImage = styled.div`
   }
 `;
 
-
-
 class Home extends Component {
   render() {
     return (

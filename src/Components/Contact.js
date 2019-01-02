@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import Form from './Form';
 
-
 const StyledContactSection = styled.div`
   margin: 0 auto;
   width: 70vw;
