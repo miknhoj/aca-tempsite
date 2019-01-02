@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import About from "./About";
 import Faq from "./Faq";
-import Form from "./Form";
 import Contact from "./Contact";
 
 const StyledTopNav = styled.div`
@@ -47,15 +46,16 @@ const StyledFooter = styled.div`
 const StyledHeadImage = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  background-image: url("https://i.imgur.com/xisItmf.jpg");
-  width: 80vw;
-  height: 80vh;
+  background-image: url("https://i.imgur.com/PZCK8GB.jpg");
+  width: 100vw;
+  height: 65vh;
   background-repeat: no-repeat;
   background-size: cover;
   @media (max-width: 555px) {
     display: none;
   }
 `;
+
 
 
 class Home extends Component {
@@ -74,7 +74,6 @@ class Home extends Component {
         <About />
         <Faq />
         <Contact/>
-        <Form />
         <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
       </div>
     );

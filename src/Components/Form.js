@@ -5,11 +5,11 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
-  width: 68vw;
-  border: 5px solid white;
-  padding: 20px;
-  font-size: 1.5rem;
+  /* box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05); */
+  width: 40vw;
+  /* border: 5px solid white; */
+  /* padding: 20px; */
+  font-size: 0.8rem;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
   font-weight: 600;
@@ -45,6 +45,11 @@ const StyledForm = styled.form`
     font-weight: 600;
     padding: 0.5rem 1.2rem;
   }
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
 `
 
 export default class Form extends Component {
@@ -53,7 +58,7 @@ export default class Form extends Component {
       <div>
         <StyledForm action="https://formspree.io/kimjohan86@gmail.com" method="POST">
           <label htmlFor="name">
-            Name
+            NAME
             <input
               type="text"
               name="name"
@@ -61,7 +66,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="email">
-            Email
+            EMAIL
             <input
               type="text"
               name="email"
@@ -69,7 +74,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="phone">
-            Phone Number
+            PHONE
             <input
               type="number"
               name="phone"
@@ -77,7 +82,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="message">
-            Message
+            MESSAGE
             <textarea
               type="text"
               name="message"
@@ -85,6 +90,7 @@ export default class Form extends Component {
             />
           </label>
           <button> Submit </button>
+          <p>Thank you!  We will get back to you within 24 hours.</p>
         </StyledForm>
       </div>
     )

@@ -88,7 +88,7 @@ const StyledStepsWithIcons = styled.div`
   }
 `;
 const StyledStepsIcons = styled.img`
-  height: 85px;
+  height: 150px;
 `;
 const StyledHalfSectionTitle = styled.div`
   margin: 0 auto;
@@ -143,11 +143,8 @@ class About extends Component {
         <StyledMissionStatement>
           <p>
             "ACA offers auto claims assistance after you’ve had an accident,
-            regardless of fault. We deal
-          </p>
-          <p>
-            with your insurance company and vehicle repair, giving you back your
-            time."
+            regardless of fault. We deal with your insurance company and vehicle 
+            repair, giving you back your time."
           </p>
         </StyledMissionStatement>
         <StyledSectionTitle>
@@ -177,18 +174,18 @@ class About extends Component {
         </StyledSectionTitle>
         <StyledSectionFlexSpaceBetween>
           <StyledStepsWithIcons>
-            <StyledStepsIcons src="https://i.imgur.com/AjDxCKr.png?1" />
+            <StyledStepsIcons src="https://i.imgur.com/7LbCb5l.png" />
             <p>You’re involved in a crash and your vehicle needs repairs.</p>
           </StyledStepsWithIcons>
           <StyledStepsWithIcons>
-            <StyledStepsIcons src="https://i.imgur.com/AjD9YWB.png" />
+            <StyledStepsIcons src="https://i.imgur.com/pfUFqEN.png" />
             <p>
               Call ACA after your accident, before filing your claim with your
               insurance company.
             </p>
           </StyledStepsWithIcons>
           <StyledStepsWithIcons>
-            <StyledStepsIcons src="https://i.imgur.com/br1dKwC.png" />
+            <StyledStepsIcons src="https://i.imgur.com/qQ85op6.png" />
             <p>
               We take it from here. We file the claim, deal with both parties’
               insurance companies, even get your car to and from the body shop
