@@ -13,6 +13,9 @@ const StyledForm = styled.form`
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
   font-weight: 600;
+  @media(max-width: 800px){
+    width: 70vw;
+  }
   label {
     display: block;
     margin-bottom: 1rem;

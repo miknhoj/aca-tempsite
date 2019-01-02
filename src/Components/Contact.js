@@ -27,12 +27,18 @@ const StyledContactInfoContainer = styled.div`
     font-size: 18px;
     font-weight: bold;
     width: 20vw;
+    @media(max-width:800px){
+      width: 70vw;
+    }
   }
 `;
 const StyledContactInfo = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-bottom: 1%;
+  @media(max-width: 800px){
+    flex-direction: column;
+  }
 `
 
 class Contact extends Component {
