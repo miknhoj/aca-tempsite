@@ -74,7 +74,7 @@ class Home extends Component {
         <About />
         <Faq />
         <Contact/>
-        <StyledFooter>&copy; Auto Claims Assistants 2018</StyledFooter>
+        <StyledFooter>&copy; Auto Claims Assistance 2018</StyledFooter>
       </div>
     );
   }
