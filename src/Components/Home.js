@@ -61,7 +61,7 @@ class Home extends Component {
     return (
       <div>
         <StyledTopNav>
-          <span>ACA</span>
+          <span>Auto Claims Assistance</span>
           <StyledNavLinksContainer>
             <a href="#about">ABOUT</a>
             <a href="#faq">FAQ</a>
