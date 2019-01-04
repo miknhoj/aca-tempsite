@@ -24,7 +24,8 @@ const StyledTopNav = styled.div`
     display: flex;
     flex-direction: column;
     span {
-      font-size: 25px;
+      font-size: 30px;
+      white-space: nowrap;
     }
   }
 `;
