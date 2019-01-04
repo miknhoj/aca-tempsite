@@ -20,6 +20,13 @@ const StyledTopNav = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media(max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 25px;
+    }
+  }
 `;
 const StyledNavLinksContainer = styled.div`
   a {
@@ -33,7 +40,7 @@ const StyledNavLinksContainer = styled.div`
   @media(max-width: 800px){
     a {
       margin-left: 15px;
-    }
+    }    
   }
 `;
 const StyledFooter = styled.div`
@@ -62,7 +69,7 @@ class Home extends Component {
       <div>
         <StyledTopNav>
           <span>Auto Claims Assistance</span>
-          <StyledNavLinksContainer>
+          <StyledNavLinksContainer className="nav">
             <a href="#about">ABOUT</a>
             <a href="#faq">FAQ</a>
             <a href="#contact">CONTACT</a>
