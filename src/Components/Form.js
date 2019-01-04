@@ -54,7 +54,7 @@ export default class Form extends Component {
   render() {
     return (
       <div>
-        <StyledForm action="https://formspree.io/kimjohan86@gmail.com" method="POST">
+        <StyledForm action="https://formspree.io/claims@autoclaimsassistance.com" method="POST">
           <label htmlFor="name">
             NAME
             <input
