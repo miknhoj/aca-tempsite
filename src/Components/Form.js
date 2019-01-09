@@ -87,6 +87,15 @@ export default class Form extends Component {
               placeholder="Tell us more about you, the incident and your claim"
             />
           </label>
+          <label htmlFor="choice">
+            IS YOUR CAR ALREADY IN THE BODY SHOP?
+            <textarea
+              type="text"
+              name="choice"
+              placeholder="Yes/No"
+            />
+          </label>
+          
           <button> Submit </button>
           <p>Thank you!  We will get back to you within 24 hours.</p>
         </StyledForm>
