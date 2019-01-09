@@ -7,9 +7,7 @@ const StyledSectionTitle = styled.div`
   margin-top: 60px;
   font-family: "Nunito Sans", sans-serif;
   h2 {
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #b9a648;
   }
 `;
 const StyledFaqSection = styled.div`

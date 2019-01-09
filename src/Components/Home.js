@@ -16,9 +16,7 @@ const StyledTopNav = styled.div`
     font-size: 55px;
     font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #b9a648;
   }
   @media(max-width: 800px) {
     display: flex;
@@ -54,7 +52,7 @@ const StyledFooter = styled.div`
 const StyledHeadImage = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  background-image: url("https://i.imgur.com/PZCK8GB.jpg");
+  background-image: url("https://i.imgur.com/swY12LM.png");
   width: 100vw;
   height: 65vh;
   background-repeat: no-repeat;

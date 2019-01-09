@@ -7,9 +7,7 @@ const StyledSectionTitle = styled.div`
   margin-top: 60px;
   font-family: "Nunito Sans", sans-serif;
   h2 {
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #b9a648;
   }
   span {
     text-align: center;
@@ -52,9 +50,7 @@ const StyledSectionFlexColumn = styled.div`
   span {
     font-size: 20px;
     font-weight: bold;
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #b9a648;
     margin-top: 20px;
     margin-bottom: 30px;
   }
@@ -98,9 +94,7 @@ const StyledHalfSectionTitle = styled.div`
   h2 {
     font-size: 20px;
     font-weight: bold;
-    background: -webkit-linear-gradient(#fad961, #f7a51c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #b9a648;
   }
   @media (max-width: 555px) {
     width: 70vw;
