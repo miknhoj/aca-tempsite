@@ -96,7 +96,7 @@ export default class Form extends Component {
             />
           </label>
           
-          <button> Submit </button>
+          <button type="submit"> Submit </button>
           <p>Thank you!  We will get back to you within 24 hours.</p>
         </StyledForm>
       </div>

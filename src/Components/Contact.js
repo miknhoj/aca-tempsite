@@ -50,7 +50,7 @@ class Contact extends Component {
             <span>Email</span> Info@autoclaimsassistance.com
           </StyledContactInfo>
           <StyledContactInfo>
-            <span>Phone</span> 770-502-6557
+            <span>Phone</span> 404-618-1414
           </StyledContactInfo>
           <StyledContactInfo>
             <span>Submit your information</span> <Form/>
