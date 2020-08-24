@@ -136,32 +136,15 @@ class About extends Component {
       <div>
         <StyledMissionStatement>
           <p>
-            "ACA offers auto claims assistance after you’ve had an accident,
-            regardless of fault. We deal with your insurance company and vehicle 
-            repair, giving you back your time."
+            ACA offers auto claims assistance after you’ve had an accident, regardless of fault, giving you back your time.
           </p>
         </StyledMissionStatement>
         <StyledSectionTitle>
           <h2>Effortless Auto Damage Repairs After a Car Accident</h2>
         </StyledSectionTitle>
         <StyledSectionFlexSpaceBetween>
-          <StyledCard>
-            ACA comes to the rescue after you’ve been involved in a crash, and
-            before you’ve spent valuable time on cleaning up the aftermath. We
-            offer auto claims assistance that takes the hassle out of the
-            insurance claim and vehicle repair process.
-          </StyledCard>
-          <StyledCard>
-            ACA offers an alternative: let us take care of the details and
-            aggravation of insurance claims and vehicle repair while you get on
-            with your life.
-          </StyledCard>
-          <StyledCard>
-            Did you know you have a choice after an accident? You don’t have to
-            call your insurance company and go down the path of doing everything
-            yourself, at the whim of the insurance company’s timeline and policy
-            and procedures that may not be so clear.
-          </StyledCard>
+          <p>Property damage claims are not the easiest to navigate as it depends on your ability to mitigate/recover your auto repairs.That is why Auto Claims Assistance is here to assist after you’ve been involved in a crash, and before you’ve spent valuable time and effort. </p>
+          <p>We offer help that takes the hassle out of the insurance claim and vehicle repair process.</p>
         </StyledSectionFlexSpaceBetween>
         <StyledSectionTitle>
           <span><h2 id="about">How's it work?</h2></span>
@@ -174,16 +157,13 @@ class About extends Component {
           <StyledStepsWithIcons>
             <StyledStepsIcons src="https://i.imgur.com/pfUFqEN.png" />
             <p>
-              Call ACA after your accident, before filing your claim with your
-              insurance company.
+              Call ACA and one of our representatives will assist you through the claims process. 
             </p>
           </StyledStepsWithIcons>
           <StyledStepsWithIcons>
             <StyledStepsIcons src="https://i.imgur.com/qQ85op6.png" />
             <p>
-              We take it from here. We file the claim, deal with both parties’
-              insurance companies, even get your car to and from the body shop
-              if you’d like. You get on with your life.
+              Get your time back so you can focus on what's most important to you.
             </p>
           </StyledStepsWithIcons>
         </StyledSectionFlexSpaceBetween>
