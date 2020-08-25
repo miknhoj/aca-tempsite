@@ -4,8 +4,9 @@ import styled from "styled-components";
 const StyledSectionTitle = styled.div`
   margin: 0 auto;
   width: 70vw;
-  margin-top: 60px;
+  margin-top: 30px;
   font-family: "Nunito Sans", sans-serif;
+  text-align: center;
   h2 {
     color: #b9a648;
   }
@@ -16,7 +17,7 @@ const StyledSectionTitle = styled.div`
 const StyledMissionStatement = styled.div`
   margin: 0 auto;
   width: 60vw;
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
   p {
     font-family: "Nunito Sans", sans-serif;
@@ -42,42 +43,43 @@ const StyledSectionFlexSpaceBetween = styled.div`
 const StyledSectionFlexColumn = styled.div`
   margin: 0 auto;
   width: 70vw;
-  margin-top: 60px;
+  margin-top: 30px;
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  align-items: center;
+  text-align: center;
   span {
     font-size: 20px;
     font-weight: bold;
     color: #b9a648;
     margin-top: 20px;
-    margin-bottom: 30px;
   }
 `;
-const StyledCard = styled.div`
-  margin-top: 20px;
-  width: 250px;
-  min-height: 160px;
-  border: 1px solid gray;
-  text-align: left;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "Nunito Sans", sans-serif;
-  @media (max-width: 1100px) {
-    margin-bottom: 15px;
-  }
-`;
+// const StyledCard = styled.div`
+//   margin-top: 20px;
+//   width: 250px;
+//   min-height: 160px;
+//   border: 1px solid gray;
+//   text-align: left;
+//   padding: 2%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: flex-start;
+//   font-family: "Nunito Sans", sans-serif;
+//   @media (max-width: 1100px) {
+//     margin-bottom: 15px;
+//   }
+// `;
 const StyledStepsWithIcons = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 250px;
-  margin-top: 80px;
+  margin-top: 50px;
   p {
     margin-top: 50px;
     text-align: left;
@@ -86,28 +88,28 @@ const StyledStepsWithIcons = styled.div`
 const StyledStepsIcons = styled.img`
   height: 150px;
 `;
-const StyledHalfSectionTitle = styled.div`
-  margin: 0 auto;
-  width: 32vw;
-  margin-top: 80px;
-  font-family: "Nunito Sans", sans-serif;
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #b9a648;
-  }
-  @media (max-width: 555px) {
-    width: 70vw;
-  }
-`;
-const StyledHalfSectionContent = styled.div`
-  margin: 0 auto;
-  width: 32vw;
-  font-family: "Nunito Sans", sans-serif;
-  @media (max-width: 555px) {
-    width: 70vw;
-  }
-`;
+// const StyledHalfSectionTitle = styled.div`
+//   margin: 0 auto;
+//   width: 32vw;
+//   margin-top: 80px;
+//   font-family: "Nunito Sans", sans-serif;
+//   h2 {
+//     font-size: 20px;
+//     font-weight: bold;
+//     color: #b9a648;
+//   }
+//   @media (max-width: 555px) {
+//     width: 70vw;
+//   }
+// `;
+// const StyledHalfSectionContent = styled.div`
+//   margin: 0 auto;
+//   width: 32vw;
+//   font-family: "Nunito Sans", sans-serif;
+//   @media (max-width: 555px) {
+//     width: 70vw;
+//   }
+// `;
 const StyledSteps = styled.div`
   font-family: "Nunito Sans", sans-serif;
   width: 70vw;
@@ -142,10 +144,10 @@ class About extends Component {
         <StyledSectionTitle>
           <h2>Effortless Auto Damage Repairs After a Car Accident</h2>
         </StyledSectionTitle>
-        <StyledSectionFlexSpaceBetween>
+        <StyledMissionStatement>
           <p>Property damage claims are not the easiest to navigate as it depends on your ability to mitigate/recover your auto repairs.That is why Auto Claims Assistance is here to assist after you’ve been involved in a crash, and before you’ve spent valuable time and effort. </p>
           <p>We offer help that takes the hassle out of the insurance claim and vehicle repair process.</p>
-        </StyledSectionFlexSpaceBetween>
+        </StyledMissionStatement>
         <StyledSectionTitle>
           <span><h2 id="about">How's it work?</h2></span>
         </StyledSectionTitle>
@@ -167,91 +169,62 @@ class About extends Component {
             </p>
           </StyledStepsWithIcons>
         </StyledSectionFlexSpaceBetween>
-        <StyledSectionFlexSpaceBetween>
-          <div>
-            <StyledHalfSectionTitle>
-              <h2>What’s the Cost of Using ACA?</h2>
-            </StyledHalfSectionTitle>
-            <StyledHalfSectionContent>
+        
+            <StyledSectionTitle>
+              <h2>Common Questions about Property Damage</h2>
+              <h4>What’s the Cost of Using ACA?</h4>
+            </StyledSectionTitle>
+            <StyledMissionStatement>
               <p>
                 The best part – you DO NOT PAY for our claim services. Our
                 services are paid by the third party vendors we use, not by you.
-                We also offer an add-on concierge service for getting your car
+              </p>
+              <p>We also offer an add-on concierge service for getting your car
                 to and from the body shop.
               </p>
-            </StyledHalfSectionContent>
-          </div>
-          <div>
-            <StyledHalfSectionTitle>
+              </StyledMissionStatement>
+            <StyledSectionTitle>
               <h2>Why Not File the Insurance Claim Myself?</h2>
-            </StyledHalfSectionTitle>
-            <StyledHalfSectionContent>
+            </StyledSectionTitle>
+            <StyledMissionStatement>
               <p>
-                Managing the insurance process yourself may not give you the
-                best outcome. The insurance procedures on how to get property
-                damage claims completed are not always easy to navigate or
-                understand. The process does not favor you; it favors the
-                insurance company.
+              The insurance procedures on how to get property damage claims completed are not always easy to navigate or understand. Not to mention, each insurance company’s process is a bit different and based on their policy holder’s guidelines. Which is why ACA is here to assist people like you through the process so you aren’t left wondering if it was a fair compromise. 
               </p>
-            </StyledHalfSectionContent>
-          </div>
-        </StyledSectionFlexSpaceBetween>
+        </StyledMissionStatement>
         <StyledSectionFlexColumn>
-          <span>
-            If you rely on your insurance company to guide you through the claim
-            process, here’s what happens next:
-          </span>
-
           <StyledSteps>
             <p>
-              YOU stay on the phone with the insurance company while the claim
-              is filled out
+              YOU stay on the phone with the insurance company while the claim is filed.
+            </p>
+            <p>(30 min legal process)</p>
+            <p>
+              YOU file the claim with the other insurance company, if you are not at fault in the accident.
+            </p>
+            <p>(30 min legal process) </p>
+            <p>
+              YOU make calls and stay on the phone while liability is decided between the insurance companies.
+            </p>
+            <p>(Can take up to 30 days) </p>
+            <p>
+              YOU are back on the phone with the insurance company getting approval repairs and rental.
             </p>
             <p>
-              YOU call around to body shops for estimates, hoping you choose a
-              good one
+              YOU arrange to get your damaged vehicle to the body shop.
             </p>
+            <p>YOU figure out how to get from the body shop to the rental car company.</p>
             <p>
-              YOU file the claim with the other insurance company if you are not
-              at fault in the accident.
-            </p>
-            <p>
-              YOU make calls and stay on the phone while liability is decided
-              between the insurance companies
-            </p>
-            <p>
-              YOU are back on the phone with the insurance company getting
-              approval for body shop repairs
-            </p>
-            <p>YOU arrange to get your damaged vehicle to the body shop</p>
-            <p>
-              YOU figure out how to get from the body shop to the rental car
-              company
-            </p>
-            <p>
-              YOU are at the mercy of whatever cost-saving deals the insurance
-              company has worked out with the body shop
-            </p>
-            <p>
-              YOU are on the phone with both insurance companies trying to get
-              your claim moved through the process
+              YOU are on the phone with both insurance companies trying to get your claim moved through the process. 
             </p>
           </StyledSteps>
           <span>Does that sound like a good use of your valuable time?</span>
-          <StyledPitch>
+          <StyledMissionStatement>
             <p>
-              At ACA we know the guidelines, laws and what the process should
-              be. We know when things are moving at market standard. It’s our
-              job to move your claim through, to get your vehicle repaired, and
-              keep you informed as we move through the process.
+              At ACA we provide you with a comprehendible process that walks you through each phase of the claim and repair.  We also know the market standards which benefits the claim process for you and the liable party.
             </p>
             <p>
-              We also have insider knowledge of the car repair process, and
-              strong relationships with highly qualified body shops. Plus, we
-              don’t require the body shops to conform to anything less than what
-              they are experts in.
+              We also have insider knowledge of the car repair process, which gets you connected with highly qualified body shops. Plus, we don’t require the body shops to conform to anything less than what they are experts in.
             </p>
-          </StyledPitch>
+          </StyledMissionStatement>
         </StyledSectionFlexColumn>
       </div>
     );

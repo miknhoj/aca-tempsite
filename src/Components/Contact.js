@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import Form from './Form';
+import Form2 from './Form2';
 
 const StyledContactSection = styled.div`
   margin: 0 auto;
@@ -8,6 +8,7 @@ const StyledContactSection = styled.div`
   margin-top: 80px;
   color: gold;
   font-family: "Nunito Sans", sans-serif;
+  text-align: center;
   h2 {
     color: #b9a648;
   }
@@ -20,6 +21,8 @@ const StyledContactInfoContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   font-family: "Nunito Sans", sans-serif;
+  margin: 0 auto;
+  width: 60vw;
   span {
     font-size: 18px;
     font-weight: bold;
@@ -53,7 +56,7 @@ class Contact extends Component {
             <span>Phone</span> 404-618-1414
           </StyledContactInfo>
           <StyledContactInfo>
-            <span>Submit your information</span> <Form/>
+            <span>Submit your information</span> <Form2/>
           </StyledContactInfo>
         </StyledContactInfoContainer>
       </div>
